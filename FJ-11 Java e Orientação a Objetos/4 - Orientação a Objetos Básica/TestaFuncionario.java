@@ -6,7 +6,6 @@ class TestaFuncionario {
         f1.salario = 500000;
         f1.recebeAumento(10);
         
-        System.out.println("salario atual:" + f1.salario);
-        System.out.println("ganho anual:" + f1.calculaGanhoAnual());
+        f1.mostra();
     }
 }
