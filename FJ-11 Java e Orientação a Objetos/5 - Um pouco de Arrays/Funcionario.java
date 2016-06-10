@@ -29,8 +29,16 @@ class Empresa {
     Funcionario[] empregados;
     int indice;
     
+    // Metodos
     void adiciona(Funcionario f) {
-        this.empregados[indice] = f;
-        indice++;
+        
+        if (indice < empregados.length) {
+            this.empregados[indice] = f;
+            indice++;
+        }
+       
+        else
+            System.out.println("Erro! Limite de funcionários alcançado.");
     }
+    
 }
