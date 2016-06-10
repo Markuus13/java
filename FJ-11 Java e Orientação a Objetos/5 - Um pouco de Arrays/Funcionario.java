@@ -18,7 +18,7 @@ class Funcionario {
         System.out.println("Nome: " + this.nome);
         System.out.println("Departamento: " + this.departamento);
         System.out.println("Salário: " + this.salario);
-        System.out.println("Data de entrada: " + this.dataDeEntrada.formatada());
+     //   System.out.println("Data de entrada: " + this.dataDeEntrada.formatada());
         System.out.println("RG: " + this.rg);
     }
 }
@@ -44,7 +44,7 @@ class Empresa {
     void mostraEmpregados() {
         // Enhanced for
         for (Funcionario emp : empregados)
-            System.out.println("Salario: " + emp.salario);
+            emp.mostra();
         
     }
     
