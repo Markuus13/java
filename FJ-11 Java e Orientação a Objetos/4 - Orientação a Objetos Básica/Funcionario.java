@@ -2,7 +2,7 @@ class Funcionario {
     String nome;
     String departamento;
     double salario;
-    String dataDeEntrada;
+    Data dataDeEntrada;
     String rg;
     
     // Métodos
