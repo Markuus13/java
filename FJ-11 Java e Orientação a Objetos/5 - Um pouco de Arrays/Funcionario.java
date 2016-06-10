@@ -41,4 +41,11 @@ class Empresa {
             System.out.println("Erro! Limite de funcionários alcançado.");
     }
     
+    void mostraEmpregados() {
+        // Enhanced for
+        for (Funcionario emp : empregados)
+            System.out.println("Salario: " + emp.salario);
+        
+    }
+    
 }
