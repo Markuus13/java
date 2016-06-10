@@ -48,4 +48,12 @@ class Empresa {
         
     }
     
+    boolean contem(Funcionario f) {
+        
+        for (Funcionario emp: empregados){
+            if (emp == f)
+                return true;
+        }
+        return false;
+    }
 }
