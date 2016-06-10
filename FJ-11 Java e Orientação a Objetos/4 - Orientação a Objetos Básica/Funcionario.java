@@ -18,7 +18,7 @@ class Funcionario {
         System.out.println("Nome: " + this.nome);
         System.out.println("Departamento: " + this.departamento);
         System.out.println("Salário: " + this.salario);
-        System.out.println("Data de entrada: " + this.dataDeEntrada.dia + "/" + this.dataDeEntrada.mes + "/" + this.dataDeEntrada.ano);
+        System.out.println("Data de entrada: " + this.dataDeEntrada.formatada());
         System.out.println("RG: " + this.rg);
     }
 }
