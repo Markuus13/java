@@ -22,3 +22,15 @@ class Funcionario {
         System.out.println("RG: " + this.rg);
     }
 }
+
+class Empresa {
+    String nome;
+    String cnpj;
+    Funcionario[] empregados;
+    int indice;
+    
+    void adiciona(Funcionario f) {
+        this.empregados[indice] = f;
+        indice++;
+    }
+}
