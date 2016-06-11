@@ -12,6 +12,7 @@ public class AtualizadorDeContas {
         System.out.println("Saldo anterior: " + c.getSaldo());
         c.atualiza(this.selic);
         System.out.println("Saldo atualizado: " + c.getSaldo());
+        this.saldoTotal += c.getSaldo();
     }
     
     public double getSaldoTotal() {
