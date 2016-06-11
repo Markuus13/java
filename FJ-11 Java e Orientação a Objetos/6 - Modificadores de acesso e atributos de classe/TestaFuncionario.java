@@ -23,5 +23,10 @@ class TestaFuncionario {
         
         // Empresa e = new Empresa();
         // TestaFuncionario.java:24: error: constructor Empresa in class Empresa cannot be applied to given types;
+        
+        // Testes em PessoaFisica
+        
+        PessoaFisica pf = new PessoaFisica("123");
+
     }
 }
