@@ -4,8 +4,13 @@ class Empresa {
     private Funcionario[] empregados;
     private int indice;
     
-    // Metodos
+    // Construtores
+    Empresa (int tamanho) {
+        empregados = new Funcionario[tamanho];
+    }
     
+    
+    // Metodos
     public String getNome() {
         return this.nome;
     }
