@@ -2,9 +2,10 @@ class TestaFuncionario {
 
     public static void main(String[] args) {
         
-        Funcionario f = new Funcionario();
+        Funcionario f = new Funcionario("Marcus");
         
-        f.setSalario(5000);
+        
+        f.setSalario(500000.0);
         f.mostra();
     }
 }
