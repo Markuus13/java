@@ -4,16 +4,24 @@ class Funcionario {
     private double salario;
     private Data dataDeEntrada = new Data();
     private String rg;
+    private static int identificador;
+    private int id;
     
     /* Construtores */
     Funcionario() {
+        this.id = ++Funcionario.identificador;
     }
     
     Funcionario(String nome) {
+        this();
         this.nome = nome;
     }
     
     /* Métodos */
+    public int getIdentificador() {
+        return this.identificador;
+    }
+    
     public String getNome() {
         return this.nome;
     }
@@ -65,6 +73,7 @@ class Funcionario {
     }
     
     public void mostra() {
+        System.out.println("Identificador: " + this.id);
         System.out.println("Nome: " + this.nome);
         System.out.println("Departamento: " + this.departamento);
         System.out.println("Salário: " + this.salario);
