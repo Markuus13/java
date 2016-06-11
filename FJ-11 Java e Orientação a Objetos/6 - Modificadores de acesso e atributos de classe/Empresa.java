@@ -1,11 +1,33 @@
 class Empresa {
-    String nome;
-    String cnpj;
-    Funcionario[] empregados;
-    int indice;
+    private String nome;
+    private String cnpj;
+    private Funcionario[] empregados;
+    private int indice;
     
     // Metodos
-    void adiciona(Funcionario f) {
+    
+    public String getNome() {
+        return this.nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public String getCnpj() {
+        return this.cnpj;
+    }
+    
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+    
+    public Funcionario getFuncionario (int posicao) {
+        return this.empregados[posicao];
+    }
+    
+    
+    public void adiciona(Funcionario f) {
         
         if (indice < empregados.length) {
             this.empregados[indice] = f;
@@ -30,14 +52,14 @@ class Empresa {
         
     }
     
-    void mostraEmpregados() {
+     public void mostraEmpregados() {
         // Enhanced for
         for (Funcionario emp : empregados)
             emp.mostra();
         
     }
     
-    boolean contem(Funcionario f) {
+    public boolean contem(Funcionario f) {
         
         for (Funcionario emp: empregados){
             if (emp == f)
